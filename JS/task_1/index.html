@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <style>
+    body {
+      text-align: center;
+      padding: 50px;
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+    }
+    img {
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Image Slider</h2>
+  <img id="slider" src="" alt="Image Slider">
+  
+  <div class="buttons">
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <script>
+    const images = [
+      "https://via.placeholder.com/400x300/FF5733/ffffff?text=Image+1",
+      "https://via.placeholder.com/400x300/33C1FF/ffffff?text=Image+2",
+      "https://via.placeholder.com/400x300/28A745/ffffff?text=Image+3",
+      "https://via.placeholder.com/400x300/FFC107/ffffff?text=Image+4"
+    ];
+
+    let currentIndex = 0;
+    const slider = document.getElementById("slider");
+
+    // Load first image on page load
+    window.onload = () => {
+      slider.src = images[currentIndex];
+    };
+
+    function nextImage() {
+      currentIndex = (currentIndex + 1) % images.length;
+      slider.src = images[currentIndex];
+    }
+
+    function prevImage() {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      slider.src = images[currentIndex];
+    }
+  </script>
+
+</body>
+</html>

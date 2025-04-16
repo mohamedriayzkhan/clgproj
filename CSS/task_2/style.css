@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  nav {
+    background-color: #343a40;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.1rem;
+  }
+  
+  section {
+    padding: 40px 0;
+  }
+  
+  h1, h2 {
+    color: #343a40;
+  }
+  
+  table th, table td {
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 10px 0;
+  }
+  
+  #gallery img {
+    margin-bottom: 20px;
+  }
+  
+  #contact .form-control {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  /* Hover effects */
+  .nav-link:hover, .btn-primary:hover {
+    color: #ff9900;
+    transition: color 0.3s;
+  }
+  

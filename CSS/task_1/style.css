@@ -1,0 +1,47 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  #productName {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  #productPrice {
+    font-size: 2rem;
+    color: #e74c3c;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    margin: 5px 0;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  table td {
+    padding: 10px;
+  }
+  
+  /* Hover Effects */
+  .btn-primary:hover, .btn-success:hover {
+    background-color: #218838;
+    color: white;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal Styles (Quick View) */
+  .modal-body img {
+    width: 100%;
+  }
+  

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WanderTales - Travel Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">WanderTales</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navBar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="bg-light text-center p-5">
+  <h1 class="display-4">Explore the World Through My Eyes</h1>
+  <p class="lead">Travel stories, tips, and breathtaking views</p>
+</header>
+
+<!-- Blog Section -->
+<section id="blogs" class="container my-5">
+  <h2 class="text-center mb-4">Latest Blog Posts</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Beach">
+        <div class="card-body">
+          <h5 class="card-title">A Week in Bali</h5>
+          <p class="card-text">From pristine beaches to vibrant temples, Bali was a dream come true!</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="Mountains">
+        <div class="card-body">
+          <h5 class="card-title">Hiking the Alps</h5>
+          <p class="card-text">Challenging yet rewarding—here’s how I conquered the Alpine trails.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/350x200" class="card-img-top" alt="City">
+        <div class="card-body">
+          <h5 class="card-title">Tokyo Diaries</h5>
+          <p class="card-text">A foodie's paradise filled with neon lights and timeless culture.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Carousel Section -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Travel Memories</h2>
+  <div id="travelCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/900x400" class="d-block w-100" alt="Beach Sunset">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/900x400" class="d-block w-100" alt="Mountain View">
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/900x400" class="d-block w-100" alt="City Lights">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#travelCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Travel Packages Table -->
+<section class="container my-5" id="destinations">
+  <h2 class="text-center mb-4">Compare Travel Packages</h2>
+  <table class="table table-bordered text-center">
+    <thead class="table-primary">
+      <tr>
+        <th>Destination</th>
+        <th>Days</th>
+        <th>Price</th>
+        <th>Inclusions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bali</td>
+        <td>7</td>
+        <td>$999</td>
+        <td>Flight, Hotel, Breakfast</td>
+      </tr>
+      <tr>
+        <td>Paris</td>
+        <td>5</td>
+        <td>$1200</td>
+        <td>Hotel, City Tour</td>
+      </tr>
+      <tr>
+        <td>Dubai</td>
+        <td>4</td>
+        <td>$850</td>
+        <td>Flight, Hotel, Safari</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Travel Tips List -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Packing Tips</h2>
+  <ul>
+    <li>Always carry a portable charger.</li>
+    <li>Roll clothes instead of folding.</li>
+    <li>Bring copies of important documents.</li>
+    <li>Pack a travel-sized first-aid kit.</li>
+  </ul>
+</section>
+
+<!-- Video/Audio -->
+<section class="container text-center my-5">
+  <h2>Watch My Iceland Adventure</h2>
+  <video width="80%" controls>
+    <source src="travel-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
+
+<!-- Subscription Form -->
+<section id="subscribe" class="container my-5">
+  <h2 class="text-center mb-4">Subscribe for Travel Updates</h2>
+  <form class="row g-3 justify-content-center">
+    <div class="col-md-4">
+      <input type="text" class="form-control" placeholder="Your Name">
+    </div>
+    <div class="col-md-4">
+      <input type="email" class="form-control" placeholder="Your Email">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-success w-100">Subscribe</button>
+    </div>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center py-3">
+  <p>&copy; 2025 WanderTales. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

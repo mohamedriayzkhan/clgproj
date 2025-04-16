@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 50px;
+      text-align: center;
+    }
+    form {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Login Form</h2>
+
+  <form onsubmit="return validateForm()">
+    <input type="email" id="email" placeholder="Enter Email">
+    <div id="emailError" class="error"></div>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <div id="passwordError" class="error"></div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateForm() {
+      let email = document.getElementById("email").value.trim();
+      let password = document.getElementById("password").value.trim();
+      let valid = true;
+
+      // Clear previous errors
+      document.getElementById("emailError").textContent = "";
+      document.getElementById("passwordError").textContent = "";
+
+      if (email === "") {
+        document.getElementById("emailError").textContent = "Email is required.";
+        valid = false;
+      }
+
+      if (password === "") {
+        document.getElementById("passwordError").textContent = "Password is required.";
+        valid = false;
+      }
+
+      return valid; // If false, form won't submit
+    }
+  </script>
+
+</body>
+</html>
