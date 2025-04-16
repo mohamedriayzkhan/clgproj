@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0;
+        }
+        input, select, button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="registration.html">Registration</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="content">
+        <h2>Register for the Event</h2>
+        <form action="#">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="preferences">Event Preferences:</label>
+            <input type="text" id="preferences" name="preferences">
+
+            <label for="category">Select Participation Category:</label>
+            <select id="category" name="category">
+                <option value="speaker">Speaker</option>
+                <option value="attendee">Attendee</option>
+                <option value="volunteer">Volunteer</option>
+            </select>
+
+            <label>Payment Method:</label>
+            <input type="radio" id="card" name="payment" value="card">
+            <label for="card">Credit/Debit Card</label>
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">PayPal</label>
+
+            <label>
+                <input type="checkbox" name="terms" required> I agree to the terms and conditions.
+            </label>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
